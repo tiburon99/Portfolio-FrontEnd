@@ -1,0 +1,43 @@
+<div class="gradiente">
+  <div class="education-global-container global-container">
+
+    <div class="titulo-container">
+      <h1 class="titulo">Educación</h1>
+      <button type="submit" class="botonAgregar btn btn-success" routerLink="/nuevaedu" *ngIf="isLogged ">
+        <i class="bi bi-plus-circle"></i>
+        Agregar
+      </button>
+    </div>
+
+<div class="edu-container">
+  <div class="edu" *ngFor="let Educacion of educacion">
+
+    <div>
+      <img src="{{Educacion.imgEdu}}" class="edu-image" />
+    </div>
+
+    <div>
+      <div class="nombre-container">
+          <div>
+            <h3 class="edu-name">{{ Educacion.nombreE }}</h3>
+            <h3 class="edu-duration">{{Educacion.duracionE}}</h3>
+          </div>
+              <div class="botones-container">
+                  <button *ngIf="isLogged" type="submit" class="botones btn btn-primary" routerLink="/editedu/{{Educacion.id}}"> 
+                    <i class="bi bi-pen"></i> 
+                  </button> 
+                  <button *ngIf="isLogged" type="submit" class="botones btn btn-danger" (click)="delete(Educacion.id)">
+                    <i class="bi bi-x-circle"></i> 
+                  </button> 
+              </div>
+
+      </div>
+
+        <h3 class="edu-description"> {{Educacion.descripcionE}} </h3>
+      
+    </div>
+  </div>
+</div>
+</div>
+  
+</div>

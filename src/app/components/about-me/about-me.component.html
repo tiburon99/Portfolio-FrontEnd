@@ -1,0 +1,63 @@
+
+<div class="gradiente"  id="about">
+
+  <div class="global-container">
+  <div>
+    <button *ngIf="isLogged" type="submit" class="botonAgregar btn btn-success" routerLink="/nuevoaboutme">
+      Agregar información a sección "Acerca de mi..."
+      <i class="bi bi-plus-circle"></i>
+    </button>
+  </div>
+
+  <div class="aboutme-container" *ngFor="let Aboutme of aboutme">
+
+    <div>
+      <div class="saludo-container">
+        <h1 class="saludo" id="salute">{{Aboutme.saludoA}}</h1>
+        <div>
+          <button *ngIf="isLogged" type="submit" class="botonesCRUD btn btn-primary" routerLink="/editaboutme/{{Aboutme.id}}" > 
+            <i class="bi bi-pen"></i> 
+          </button> 
+          <button *ngIf="isLogged" type="submit" class="botonesCRUD btn btn-danger" (click)="delete(Aboutme.id)">
+            <i class="bi bi-x-circle"></i> 
+          </button>
+        </div> 
+    </div>
+
+    <h3 class="descripcion" id="texto">
+      <p>{{Aboutme.descripcionA}}</p>
+      <div class="botones-container">
+      <button *ngIf="isLogged" type="submit" class="botonesCRUD btn btn-primary" routerLink="/editaboutme/{{Aboutme.id}}" > 
+        <i class="bi bi-pen"></i> 
+      </button> 
+      <button *ngIf="isLogged" type="submit" class="botonesCRUD btn btn-danger" (click)="delete(Aboutme.id)">
+        <i class="bi bi-x-circle"></i> 
+        </button>
+      </div> 
+    </h3>
+    </div>
+
+      <div class="titulo-container">
+      <h3 class="titulo">{{Aboutme.tituloA}}</h3>
+      <div>
+      <button *ngIf="isLogged" type="submit" class="botonesCRUD btn btn-primary" routerLink="/editaboutme/{{Aboutme.id}}" > 
+        <i class="bi bi-pen"></i> 
+      </button> 
+      <button *ngIf="isLogged" type="submit" class="botonesCRUD btn btn-danger" (click)="delete(Aboutme.id)">
+        <i class="bi bi-x-circle"></i> 
+        </button> 
+      </div>
+
+      <img
+        src={{Aboutme.imgA}}
+        class="perfil-photo"
+      />
+      </div>
+
+      
+  </div>
+
+  
+  </div>
+</div>
+

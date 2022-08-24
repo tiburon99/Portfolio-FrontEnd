@@ -1,0 +1,172 @@
+.experiencia-container{
+    padding-top: 4rem;
+    padding-bottom: 5em;
+}
+
+
+.gradiente{
+    
+        background: rgb(212, 215, 224);
+        background: linear-gradient(180deg, rgb(242, 243, 244) 1%, rgb(195, 200, 215) 90%);
+    
+    
+
+}
+
+
+
+.titulo {
+    font-size: 80px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    display:inline;
+    color:  rgba(80,93,136,1)
+    
+}
+
+.titulo-container{
+
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    
+}
+
+
+.job{
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.job:hover{
+    box-shadow: 0px 0px 1px 1px  rgba(80,93,136,1);
+    transition: 0.5s;
+    border-radius: 50px;
+}
+
+
+.nombre-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.job-img {
+    border-radius:50%;
+   
+    width: 180px;
+    height: 180px;
+}
+
+.job-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 3rem;
+    
+}
+
+.first-job-name {
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    display: inline;
+    color:  rgba(80,93,136,1)
+
+}
+
+.first-job-duration {
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    color:  rgba(80,93,136,1);
+    margin-bottom: 2em;
+    
+}
+
+.first-job-description{
+    
+    font-weight: 350;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+    margin: 0%;
+    color: rgba(80,93,136,1);
+    font-size: 1.2rem;
+}
+
+.botonAgregar{
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    display: inline;
+    
+} 
+
+
+.botones{
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    display:inline; 
+    border-radius: 80rem;
+    margin-left: 10px;
+    margin-bottom: 0.5rem;
+
+}
+
+.botones-container{
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 940px) {
+    .titulo{
+        font-size: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 740px) {
+    .titulo-container{
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .first-job-duration{
+        
+        margin-top: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 555px) {
+    .nombre-container{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        text-align: center;
+    }
+
+    .first-job-duration{
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+
+    .first-job-description{
+        margin-top: 1rem;
+    }
+
+    .job{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .titulo{
+        font-size: 50px;
+    }
+
+}

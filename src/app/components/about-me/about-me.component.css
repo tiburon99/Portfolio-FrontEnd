@@ -1,0 +1,147 @@
+
+.perfil-photo {
+    
+    
+    height: 25em;
+    
+    border-radius: 50%;
+    width: 450px;
+
+
+}
+
+
+
+.aboutme-container{
+    display: flex;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    gap: 5em;
+    
+}
+
+.titulo {
+
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    text-shadow: 2px 2px 8px rgb(34, 34, 36);
+    text-overflow: wrap;
+
+}
+
+.titulo-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.saludo {
+    
+    font-size: 80px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.saludo-container{
+    display: flex;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.descripcion {
+    margin-top: 1.50em;
+    text-align: justify;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    
+
+}
+
+.gradiente {
+    background: rgb(80,93,136);
+    
+
+}
+
+.botones-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.botonAgregar {
+    color: white;
+
+    border-radius: 3em;
+    z-index: 1;
+
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+
+    margin-top: 2.5em;
+    
+
+}
+
+.botonesCRUD {
+
+    color: white;
+
+    border-radius: 3em;
+   
+
+
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+
+    margin-left: 0.5em;
+
+}
+
+
+@media only screen and (max-width: 935px) {
+    .aboutme-container{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .perfil-photo {
+        width: fit-content;
+        
+        
+    }
+    .titulo-container{
+        align-items: center;
+    }
+
+    .saludo-container{
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .perfil-photo{
+        height: 100%;
+        width: 100%;
+    }
+
+    .saludo-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .saludo{
+        font-size: 60px;
+    }
+}
+
+

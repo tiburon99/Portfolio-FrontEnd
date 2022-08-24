@@ -1,0 +1,42 @@
+<div id="top" class="background-image"> <!-- La imagen esta en el CSS con los atributos + flex -->
+    
+    <div class="background-filter"></div> <!--Se crea otro div+class dentro del de la imagen para el filtro, ver en CSS -->
+    
+    <div class="global-container test">
+        <button *ngIf="isLogged" type="submit" class="botonAgregar btn btn-success" routerLink="/nuevobanner" >
+          <i class="bi bi-plus-circle"></i>
+        </button>
+        
+        <div  class="general" *ngFor="let Banner of banner">
+          <div class="botonesCRUD">
+            
+            <button *ngIf="isLogged" type="submit" class="botonesCRUD btn btn-primary" routerLink="/editbanner/{{Banner.id}}" > 
+              <i class="bi bi-pen"></i> 
+            </button> 
+            <button *ngIf="isLogged" type="submit" class="botonesCRUD btn btn-danger" (click)="delete(Banner.id)">
+              <i class="bi bi-x-circle"></i> 
+              </button> 
+          </div>
+        
+          <div class="texto-container">
+          <h1 class="nombre">{{Banner.nombreBanner}}</h1> <!--Los atributos estan en CSS pero tambien aca-->
+          <h3 class="subnombre">{{Banner.ubicacionBanner}}</h3>    <!-- ya que usar Bootstrap sustituyo la configuracion-->
+          </div>
+        </div>
+
+        
+          
+          <div class="btn-group">
+                
+            <a href="#about" class="btn-link btn btn-primary">Acerca de mi   <i class="bi bi-person-lines-fill"></i></a>
+            <a href="#proyectos" class="btn-link btn btn-primary">Proyectos      <i class="bi bi-folder2"></i></a>
+            <a href="#contacto" class="btn-link btn btn-primary">Contacto       <i class="bi bi-chat-dots"></i></a>
+      
+          </div>
+
+    </div>
+    
+</div>   
+  
+    
+    

@@ -1,0 +1,27 @@
+<div>
+    <div class="header-container">
+    <div>
+      <img src="../../../assets/APLogo.png" class="img-fluid" id="logoAP" />
+    </div>
+
+    <div class="botones-container">
+      <div class="social-container">
+        
+        
+        <a href="https://www.instagram.com/francotiviroli/"
+            ><img src="../../../assets/instagram.png"  class="social-img"
+        /></a>
+        <a href="https://www.linkedin.com/"
+            ><img src="../../../assets/linkedin.png"  class="social-img"
+        /></a>
+        <a href="https://github.com/tiburon99"
+            ><img src="../../../assets/github.png"  class="social-img"
+        /></a>
+      </div>
+      <div class="login-container">
+        <button type="button" class="btn btn-outline-light  login-text" (click)="login()" *ngIf="!isLogged"> Ingreso </button>
+        <button type="button" class="btn btn-outline-light  login-text" (click)="onLogOut()"*ngIf="isLogged"> Salir</button>
+      </div>  
+    </div>
+  </div>
+</div>

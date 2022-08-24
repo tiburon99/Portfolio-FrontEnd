@@ -1,0 +1,69 @@
+#logoAP{
+    height: 6em;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.social-img{
+    width: 3em;
+    
+}
+
+
+
+.botones-container{
+    display: flex;
+    gap: 1em;
+    padding-right: 0.8em;
+}
+
+.login-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    border-width: medium;
+}
+
+.social-container{
+    display: flex;
+    gap: 0.8em;
+    
+}
+
+/* BREAKPOINTS */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 680px) {
+    
+    .social-img{
+        width: 2em;
+    }
+
+    .login-text{
+        font-size: 0.8em
+    }
+
+} 
+
+@media only screen and (max-width: 550px) {
+    .header-container{
+        flex-direction: column;
+        padding-bottom: 1em;
+        padding-right: 0em;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .botones-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    
+
+    
+}

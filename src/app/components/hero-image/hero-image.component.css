@@ -1,0 +1,176 @@
+.background-image {
+  background-image: url("../../../assets/MENDOZA.jpg");
+  /* The image used */
+  height: 100vh;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.background-filter {
+  background-color: rgba(13, 15, 22, 0.7);
+  /* Se utiliza rgbA para opacidad */
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  /* Esto son las capas tridimensionales siendo -1 0 1 etc */
+}
+
+.nombre {
+
+  font-size: 80px;
+  font-weight: 600;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  z-index: 1;
+  margin: 0%;
+  padding-bottom: 0.9rem;
+  display: inline;
+}
+
+.subnombre {
+
+  font-size: 30px;
+  font-weight: 300;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  padding-bottom: 1.5em;
+  z-index: 1;
+  text-align: center;
+
+}
+
+.texto-container{
+  
+  text-align: center;
+  padding: 0;
+  
+ 
+}
+
+.general {
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  z-index: 1;
+
+ 
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  
+  
+}
+
+.btn-link {
+  border-radius: 5rem !important;
+  background-color: rgb(80, 93, 136);
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}
+
+.to-the-top {
+
+  position: fixed;
+  font-size: 3rem;
+
+  bottom: 1rem;
+  right: 2rem;
+  z-index: 2;
+  color: rgba(80, 93, 136, 1);
+  text-shadow: black;
+}
+
+.botonesCRUD {
+
+  color: white;
+
+  border-radius: 3em;
+  z-index: 1;
+
+
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+
+  margin-left: 0.5em;
+
+}
+
+.botonAgregar {
+  color: white;
+
+  border-radius: 3em;
+  z-index: 1;
+
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+
+  margin-bottom: 1em;
+  margin-left: 1.5em;
+
+}
+
+
+.botonEditar {
+  border-radius: 3em;
+  z-index: 1;
+
+
+  font-weight: 300;
+  font-family: 'Ubuntu', sans-serif;
+
+  margin-left: 1em;
+
+}
+
+.botonBorrar {
+  border-radius: 3em;
+  z-index: 1;
+
+
+  font-weight: 300;
+  font-family: 'Ubuntu', sans-serif;
+
+  margin-left: 1em;
+
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+@media only screen and (max-width: 850px) {
+  .nombre{
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .btn-group{
+    flex-direction: column;
+  }
+  
+}

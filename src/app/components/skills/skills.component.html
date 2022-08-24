@@ -1,0 +1,68 @@
+<div class="gradiente">
+  <div class="skills-global-container global-container">
+    <div class="titulo-container">
+      <h1 class="titulo">Hard and Soft Skills</h1>
+      <button
+        type="submit"
+        class="botonAgregar btn btn-success"
+        routerLink="/nuevaskill"
+        *ngIf="isLogged"
+      >
+        <i class="bi bi-plus-circle"></i>
+        Agregar
+      </button>
+    </div>
+
+    <div class="skills-container">
+      <div class="skills" *ngFor="let Skill of skill">
+        <circle-progress
+          class="x"
+          [percent]="Skill.porcentajeSkill"
+          [maxPercent]="100"
+          [radius]="100"
+          [showUnits]="true"
+          unitsColor="white"
+          [showSubtitle]="true"
+          [subtitle]="'work in progress'"
+          subtitleColor="#505d88"
+          subtitleFontSize="15"
+          subtitleFontWeight="600"
+          titleFontSize="25"
+          titleFontWeight="600"
+          titleColor = white
+          [innerStrokeColor]="'#c0bfc5'"
+          [innerStrokeWidth]="13"
+          [space]="-13"
+          [outerStrokeGradient]="true"
+          [outerStrokeColor]="'#d3d2e2'"
+          [outerStrokeGradientStopColor]="'#505d88'"
+          [outerStrokeWidth]="15"
+          [animation]="true"
+          [animationDuration]="300"
+          [responsive]="true"
+          
+        ></circle-progress>
+
+        <h3 class="descripcion">{{ Skill.nombreSkill }}</h3>
+        <div class="botones-container">
+          <button
+            *ngIf="isLogged"
+            type="submit"
+            class="botones btn btn-primary"
+            routerLink="/editskill/{{ Skill.id }}"
+          >
+            <i class="bi bi-pen"></i>
+          </button>
+          <button
+            *ngIf="isLogged"
+            type="submit"
+            class="botones btn btn-danger"
+            (click)="delete(Skill.id)"
+          >
+            <i class="bi bi-x-circle"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

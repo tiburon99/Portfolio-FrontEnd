@@ -1,0 +1,72 @@
+{
+  "heroImage": {
+    "name": "Franco Tiviroli Lardet",
+    "ubicacion": "Mendoza, Argentina"
+  },
+
+  "aboutMe": {
+    "saludo": "¡Hola!",
+    "imagen": "../../../assets/FOTOPERFILCIRCLE.png",
+    "titulo": "Full Stack Developer Jr.",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatum tempora sint quod aspernatur. Cumque eligendi facilis totam enim, voluptatum eaque unde aliquam provident ipsa perspiciatis ex iste corporis dolor! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia vel commodi quisquam totam ullam ipsum soluta excepturi! Iure, necessitatibus facilis consectetur, illo, ipsam vitae cum quod culpa quas voluptatem sed! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, aliquam. Beatae perferendis magnam repudiandae adipisci? Eveniet, blanditiis vitae possimus numquam, quasi odit qui similique molestiae incidunt, hic suscipit optio aspernatur"
+  },
+
+  "experience": [
+    {
+      "experience": "First Job.",
+      "imagen": "../../../assets/vinculatlogo-modified.png",
+      "descripcion": "Lorem ipsum text",
+      "duracion": "(2014-2022)"
+    },
+    {
+      "experience": "Second Job.",
+      "imagen": "../../../assets/vinculatlogo-modified.png",
+      "descripcion": "Lorem ipsum text dos",
+      "duracion": "(2022)"
+    }
+  ],
+
+  "education": [
+    {
+      "educacion": "Departamento de Aplicación Docente.",
+      "imagen": "../../../assets/escuelasdad.png",
+      "descripcion": "Toda la informacion respecto al DAD.",
+      "duracion": "(2007-2009)"
+    },
+    {
+      "educacion": "Escuela del Magisterio.",
+      "imagen": "../../../assets/escuelasmagisterio.png",
+      "descripcion": "Lo del Magisterio.",
+      "duracion": "(2010-2012)"
+    },
+    {
+      "educacion": "Facultad de Psicologia, Universidad del Aconcagua.",
+      "imagen": "../../../assets/logo-psicologia.png",
+      "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "duracion": "(2013-2020)"
+    },
+    {
+      "educacion": "EGG Education.",
+      "imagen": "../../../assets/egggray.png",
+      "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "duracion": "(2021)"
+    }
+  ],
+
+  "skills": {
+    "imagen": "../../../assets/html5icon.png"
+  },
+
+  "proyects": [
+    {
+      "titulo": "On my way",
+      "imagen": "../../../assets/ideaicon.png",
+      "descripcion": "De a poco ésta sección podrá ir llenándose, en la medida que mis conocimientos estén a la altura de permitirme crear."
+    },
+    {
+      "titulo": "On my second way",
+      "imagen": "../../../assets/ideaicon.png",
+      "descripcion": "No hay dos sin tres y aca ni hay dos."
+    }
+  ]
+}

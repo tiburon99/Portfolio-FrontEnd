@@ -1,0 +1,106 @@
+<form
+  (ngSubmit)="onCreate()"
+  novalidate
+  #f="ngForm"
+  class="x vh-100"
+  style="background-color: #7c76a5"
+>
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-9">
+        <h1 class="text-white mb-4">About me...</h1>
+        <div class="card" style="border-radius: 15px">
+          <div class="card-body">
+            <div class="row align-items-center pt-4 pb-3">
+              <div class="form-group col-md-3 ps-5">
+                <h6 class="mb-0">
+                  <label for="tituloA">Título</label>
+                </h6>
+              </div>
+              <div class="col-md-9 pe-5">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="tituloA"
+                  name="tituloA"
+                  [(ngModel)]="tituloA"
+                  name="tituloA"
+                  required
+                />
+              </div>
+            </div>
+
+            <hr class="mx-n3" />
+            <div class="row align-items-center pt-4 pb-3">
+              <div class="form-group col-md-3 ps-5">
+                <h6 class="mb-0">
+                  <label for="saludoA">Saludo/Cabecera</label>
+                </h6>
+              </div>
+
+              <div class="col-md-9 pe-5">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="saludoA"
+                  name="saludoA"
+                  [(ngModel)]="saludoA"
+                  name="saludoA"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row align-items-center py-3">
+              <div class="form-group col-md-3 ps-5">
+                <h6 class="mb-0">
+                  <label for="descripcionA">Descripción</label>
+                </h6>
+              </div>
+
+              <div class="col-md-9 pe-5">
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  id="descripcionA"
+                  name="descripcionA"
+                  [(ngModel)]="descripcionA"
+                  name="descripcionA"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <hr class="mx-n3" />
+            <div class="row align-items-center pt-4 pb-3">
+              <div class="form-group col-md-3 ps-5">
+                <h6 class="mb-0">
+                  <label for="imgA">Link imagen</label>
+                </h6>
+              </div>
+
+              <div class="col-md-9 pe-5">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="imgA"
+                  name="imgA"
+                  [(ngModel)]="imgA"
+                  name="imgA"
+                  required
+                />
+              </div>
+            </div>
+
+            <hr class="mx-n3" />
+            <div class="px-5 py-4">
+              <button type="submit" class="btn btn-primary btn-lg">
+                Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

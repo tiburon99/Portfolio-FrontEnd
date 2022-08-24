@@ -1,0 +1,67 @@
+<section *ngIf="skill">
+<form
+  (ngSubmit)="onUpdate()"
+  novalidate
+  #f="ngForm"
+  class="x vh-100"
+  style="background-color: #7c76a5"
+>
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-9">
+        <h1 class="text-white mb-4">Modificar habilidad</h1>
+        <div class="card" style="border-radius: 15px">
+          <div class="card-body">
+            <div class="row align-items-center pt-4 pb-3">
+              <div class="form-group col-md-3 ps-5">
+                <h6 class="mb-0">
+                  <label for="nombreSkill">Nombre</label>
+                </h6>
+              </div>
+              <div class="col-md-9 pe-5">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombreSkill"
+                  name="nombreSkill"
+                  [(ngModel)]="skill.nombreSkill"
+                  name="nombreSkill"
+                  required
+                />
+              </div>
+            </div>
+
+            <hr class="mx-n3" />
+            <div class="row align-items-center pt-4 pb-3">
+              <div class="form-group col-md-3 ps-5">
+                <h6 class="mb-0">
+                  <label for="porcentajeSkill">Porcentaje</label>
+                </h6>
+              </div>
+
+              <div class="col-md-9 pe-5">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="porcentajeSkill"
+                  name="porcentajeSkill"
+                  [(ngModel)]="skill.porcentajeSkill"
+                  name="porcentajeSkill"
+                  required
+                />
+              </div>
+            </div>
+
+            <hr class="mx-n3" />
+            <div class="px-5 py-4">
+              <button type="submit" class="btn btn-primary btn-lg">
+                Modificar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+</section>

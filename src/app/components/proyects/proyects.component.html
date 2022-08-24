@@ -1,0 +1,52 @@
+<div class="gradiente" id="proyectos">
+  <div class="projects-global-container global-container">
+    <div class="titulo-container">
+      <h1 class="titulo">Proyectos</h1>
+      <button
+        type="submit"
+        class="botonAgregar btn btn-success"
+        routerLink="/nuevoproyecto"
+        *ngIf="isLogged"
+      >
+        <i class="bi bi-plus-circle"></i>
+        Agregar
+      </button>
+    </div>
+
+    <div class="projects-container">
+      <div class="projects" *ngFor="let Proyectos of proyectos">
+        <div>
+          <img src="{{ Proyectos.imgProyecto }}" class="img-proyecto" />
+        </div>
+
+        <div class="">
+          <div class="nombre-container">
+            <h3 class="nombre">{{ Proyectos.tituloP }}</h3>
+
+            <div class="botones-container">
+              <button
+                *ngIf="isLogged"
+                type="submit"
+                class="botones btn btn-primary"
+                routerLink="/editproyecto/{{ Proyectos.id }}"
+              >
+                <i class="bi bi-pen"></i>
+              </button>
+              <button
+                *ngIf="isLogged"
+                type="submit"
+                class="botones btn btn-danger"
+                (click)="delete(Proyectos.id)"
+              >
+                <i class="bi bi-x-circle"></i>
+              </button>
+            </div>
+          </div>
+          <h3 class="texto">
+            {{ Proyectos.descripcionP }}
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

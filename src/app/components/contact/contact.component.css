@@ -1,0 +1,102 @@
+.background-image {
+    background-image: url("../../../assets/fototanque2.jpg");
+    /* The image used */
+    height: 100%;
+    width: 100%;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+
+
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    filter: blur(6px);
+}
+
+.background-filter {
+    background-color: rgba(42, 54, 99, 0.7);
+    /* Se utiliza rgbA para opacidad */
+    height: 70%;
+    width: 70%;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+    
+    /* Esto son las capas tridimensionales siendo -1 0 1 etc */
+}
+
+
+
+.global {
+    height: 45vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.titulo{
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.texto{
+    font-weight: 200;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.texto-dos{
+    font-weight: 200;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    
+}
+
+.iconos{
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.individual{
+    color:  #505d88;
+    border: none;
+    border-radius: 80px;
+    width: 3rem;
+    text-align: center;
+    font-weight: 10px;
+    
+}
+
+a{
+    text-decoration: none !important;
+    color: inherit
+}
