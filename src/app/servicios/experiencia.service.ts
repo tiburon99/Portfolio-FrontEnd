@@ -9,7 +9,8 @@ import { Injectable } from '@angular/core';
 })
 export class ExperienciaService {
 
-  expURL= 'http://localhost:8080/explab/'
+  expURL= 'https://portfolio-bkd.herokuapp.com/explab/'
+
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Experiencia[]>{

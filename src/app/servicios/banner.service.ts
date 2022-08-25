@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BannerService {
-  URL = 'http://localhost:8080/banner/'
+  URL = 'https://portfolio-bkd.herokuapp.com/banner/'
+
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Banner[]>{

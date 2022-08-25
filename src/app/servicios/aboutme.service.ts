@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class AboutmeService {
-  URL = 'http://localhost:8080/acerca/'
+  URL = 'https://portfolio-bkd.herokuapp.com/acerca/'
 
   constructor(private httpClient: HttpClient) { }
 
